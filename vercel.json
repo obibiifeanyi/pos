@@ -1,22 +1,20 @@
 {
   "version": 2,
-  "buildCommand": "bash build.sh",
-  "outputDirectory": "dist",
   "functions": {
     "api/index.php": { "runtime": "vercel-php@0.6.0" }
   },
   "routes": [
     {
-      "src": "/build/(.*)",
-      "dest": "/public/build/$1"
+      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot|map))",
+      "dest": "/public/$1"
     },
     {
-      "src": "/(css|js|img|fonts)/(.*)",
+      "src": "/(css|js|img|fonts|plugins)/(.*)",
       "dest": "/public/$1/$2"
     },
     {
-      "src": "/(.*\\.(css|js|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot))",
-      "dest": "/public/$1"
+      "src": "/resources/(.*)",
+      "dest": "/resources/$1"
     },
     {
       "src": "/(.*)",

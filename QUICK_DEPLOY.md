@@ -17,11 +17,11 @@ All your DreamsPOS code has been successfully pushed to the repository.
 3. Import your repository: `obibiifeanyi/pos`
 4. Configure:
    - **Framework Preset**: Other
-   - **Root Directory**: `./`
-   - **Build Command**: `bash build.sh`
-   - **Output Directory**: `dist`
+   - **Root Directory**: `./` (leave as default)
+   - **Build Command**: Leave empty (Vercel will auto-detect)
+   - **Output Directory**: Leave empty (using default)
 
-**Note**: The build script has been updated to work with Vercel's environment by removing PHP commands that aren't available during build time and properly creating the output directory.
+**Note**: The configuration has been simplified to work with Vercel's auto-detection since Composer and PHP aren't available during the build phase.
 
 ## Step 4: Environment Variables in Vercel
 Add these environment variables in Vercel dashboard:
