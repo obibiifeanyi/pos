@@ -1,4 +1,16 @@
 node_modules
+build.sh
+build.sh.backup
+composer.phar
+composer-setup.php
+deploy.bat
+.env
+tests/
+storage/logs/
+storage/framework/cache/
+storage/framework/sessions/
+storage/framework/testing/
+storage/framework/views/
 .git
 .env.local
 .env.*.local
