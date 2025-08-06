@@ -19,7 +19,9 @@ All your DreamsPOS code has been successfully pushed to the repository.
    - **Framework Preset**: Other
    - **Root Directory**: `./`
    - **Build Command**: `bash build.sh`
-   - **Output Directory**: `public`
+   - **Output Directory**: `dist`
+
+**Note**: The build script has been updated to work with Vercel's environment by removing PHP commands that aren't available during build time and properly creating the output directory.
 
 ## Step 4: Environment Variables in Vercel
 Add these environment variables in Vercel dashboard:
