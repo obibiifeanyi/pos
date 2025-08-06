@@ -9,11 +9,6 @@ npm ci
 # Build frontend assets
 npm run build
 
-# Clear and cache Laravel configuration
-php artisan config:cache
-php artisan route:cache
-php artisan view:cache
-
 # Create storage directories
 mkdir -p storage/framework/cache/data
 mkdir -p storage/framework/sessions
@@ -24,3 +19,6 @@ mkdir -p storage/logs
 # Set permissions
 chmod -R 755 storage
 chmod -R 755 bootstrap/cache
+
+# Copy public directory for Vercel
+cp -r public dist
